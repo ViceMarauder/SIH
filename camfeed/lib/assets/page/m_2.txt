@@ -1,0 +1,30 @@
+import 'package:csur/pages/liveview.dart';
+import 'package:flutter/material.dart';
+import 'package:csur/pages/homepage.dart';
+import 'package:csur/pages/camerafeed.dart';
+import 'package:csur/pages/livefeed.dart';
+
+void main() {
+  runApp(const MyApp());
+}
+
+class MyApp extends StatelessWidget {
+  const MyApp({Key? key}) : super(key: key);
+
+  // This widget is the root of your application.
+  @override
+  Widget build(BuildContext context) {
+    return MaterialApp(
+        theme: ThemeData(
+          primarySwatch: Colors.red,
+          appBarTheme: AppBarTheme(color: Colors.orange),
+        ),
+        debugShowCheckedModeBanner: false,
+        initialRoute: '/',
+        routes: {
+          '/': (context) => Homepage(),
+          '/camera': (context) => CameraFeeds(),
+          '/liveview': (context) => Livecamera(),
+        });
+  }
+}
