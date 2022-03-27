@@ -17,7 +17,7 @@ class _HomepageState extends State<Homepage> {
       child: Column(
         mainAxisAlignment: MainAxisAlignment.center,
         children: <Widget>[
-          Image.asset('/Users/vaibhavsingh/csur/lib/assets/cam1.png',
+          Image.asset('lib/assets/cam1.png',
               width: 300, height: 100),
           const SizedBox(height: 60),
           AutoSizeText(

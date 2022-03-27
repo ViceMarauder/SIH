@@ -18,7 +18,7 @@ class _VideoAppState extends State<VideoApp> {
     // offers several different constructors to play videos from assets, files,
     // or the internet.
     _controller = VideoPlayerController.asset(
-      '/Users/vaibhavsingh/camerafeed_front_end/camfeed/lib/assets/video/Fighting012_x264.mp4',
+      'lib/assets/images/video/Fighting012_x264.mp4',
     );
 
     // Initialize the controller and store the Future for later use.
