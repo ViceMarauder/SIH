@@ -20,6 +20,7 @@ class CameraFeeds extends StatefulWidget {
 class _CameraFeedsState extends State<CameraFeeds> {
   @override
   void initState() {
+    // ignore: todo
     // TODO: implement initState
     super.initState();
   }
@@ -48,13 +49,13 @@ class _CameraFeedsState extends State<CameraFeeds> {
   Widget build(BuildContext context) {
     return Scaffold(
         appBar: AppBar(
-          title: Text(
+          title: const Text(
             "Catalogue App",
           ),
         ),
-        body: Padding(
-          padding: const EdgeInsets.all(16.0),
-          child: const Text("camera feed"),
+        body: const Padding(
+          padding: EdgeInsets.all(16.0),
+          child: Text("camera feed"),
           //   child:
           //       (CatalogueModel.items != null && CatalogueModel.items!.isNotEmpty)
           //           ? ListView.builder(

@@ -4,6 +4,10 @@
         android:label="camfeed"
         android:name="${applicationName}"
         android:icon="@mipmap/ic_launcher">
+    
+  <uses-permission android:name="android.permission.INTERNET"/>
+    <meta-data android:name="com.google.android.geo.API_KEY"
+               android:value="AIzaSyCjGVJb4XmzhcjXSw3neJEvzcILTHhvs3k"/>
         <activity
             android:name=".MainActivity"
             android:exported="true"

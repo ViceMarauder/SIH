@@ -1,7 +1,13 @@
+//import 'package:camfeed/assets/page/video.txt';
+
 import 'package:flutter/material.dart';
 import 'package:animated_splash_screen/animated_splash_screen.dart';
 import 'assets/page/camerafeed.dart';
 import 'assets/page/homepage.dart';
+//import 'assets/page/map.txt';
+//import 'assets/page/video.txt';
+import 'assets/page/loginpage.dart';
+import 'assets/page/map.dart';
 
 //import 'package:page_transition/page_transition.dart';
 //import 'package:splash_screen_view/SplashScreenView.dart';
@@ -16,17 +22,24 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
+        debugShowCheckedModeBanner: false,
         title: 'clean code',
         home: AnimatedSplashScreen(
             duration: 3000,
-            splash:
-                const Image(image: AssetImage("lib/assets/images/logo.png")),
-            nextScreen: const Homepage(),
+            splash: const Image(
+              image: AssetImage(
+                "lib/assets/images/LOGO3.jpeg",
+              ),
+            ),
+            nextScreen: const LoginDemo(),
             splashTransition: SplashTransition.fadeTransition,
             //pageTransitionType: PageTransitionType.scale,
-            backgroundColor: Colors.blue),
+            backgroundColor: Color.fromARGB(255, 8, 64, 110)),
         routes: {
+          '/homepage': (context) => Homepage(),
           '/camera': (context) => const CameraFeeds(),
+          '/map': (context) => MyMaps(),
+
           // '/liveview': (context) => Livecamera(),
         });
   }
