@@ -19,32 +19,32 @@ class _HomepageState extends State<Homepage> {
         children: <Widget>[
           Image.asset('/Users/vaibhavsingh/csur/lib/assets/cam1.png',
               width: 300, height: 100),
-          SizedBox(height: 60),
+          const SizedBox(height: 60),
           AutoSizeText(
             'Welcome to Cam-survilace',
             style: Theme.of(context).textTheme.headline4,
             maxLines: 1,
           ),
-          SizedBox(height: 20),
+          const SizedBox(height: 20),
           AutoSizeText(
             'Please select an option',
             style: Theme.of(context).textTheme.headline4,
             maxLines: 1,
           ),
-          SizedBox(height: 20),
+          const SizedBox(height: 20),
           ElevatedButton(
             child: const Text('Camera Feeds'),
             onPressed: () {
               Navigator.pushNamed(context, '/camera');
             },
           ),
-          SizedBox(height: 20),
-          // ElevatedButton(
-          //   child: Text('camera view'),
-          //   onPressed: () {
-          //     Navigator.pushNamed(context, '/liveview');
-          //   },
-          // ),
+          const SizedBox(height: 20),
+          ElevatedButton(
+            child: const Text('camera view'),
+            onPressed: () {
+              Navigator.pushNamed(context, '/map');
+            },
+          ),
         ],
       ),
     );
